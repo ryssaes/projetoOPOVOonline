@@ -5,89 +5,54 @@
     padding: 0;margin: 0;box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
-
-.layout{
-    margin: 0 auto;
-    align-self: center;      
-    width: 1170px;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(12, 73px);
-    grid-template-rows:repeat(5, 1fr);
-    padding: 0 15px;
-    column-gap: 24px;
-
-    grid-template-areas:
-    "arti arti arti arti arti arti img img img img img img"
-    "arti arti arti arti arti arti img img img img img img"
-    "form form form form form form img img img img img img"
-    "form form form form form form img img img img img img"
-    "form form form form form form img img img img img img"
-    ;
-}
-.menutopo{
-    background-color: #4a85af;
-    width: 100vw;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
+:root{
+  --azul: #4a85b0;
+  --azul-texto: #314163;
+  --branco: #ffffff;
+  --blue-light : #a3c6da;
+  --fundo-tres: #e7f8ff;
+  --azul-botao: #4a85af;
 }
 
 
-.menutopo nav, .content-footer{
-    width: 1170px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.menutopo nav ul{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    padding: 20px;
-}
-.logo{
-  font-size: 2rem;
-  margin-left: 15px;    
-}
-.blue-light {
-    color: #a3c6da;
-    font-family: 'Rozha One', serif; 
-  }
-  .white {
-    color: #fff; 
-    font-family: 'Rozha One', serif;
-}
 
 .artigo{
-     grid-area: arti;
-     color: #314163;
+  color: var(--azul-texto);
 }
-.back{
-    display: block;
-    margin: 50px 0;
-    font-size: 20px;
+.back {
+  display: inline-block;
+  width: 100%;
+  margin: 50px 0;
 }
-.back a{
-    text-decoration: none;
-    color: #314163;
+.back a {
+  text-decoration: none;
+  color: var(--azul-texto);
 }
-.artigo h1{
-    font-size: 50px;
-    margin-bottom: 35px;
+
+.artigo h1 {
+  font-size: 50px; 
+  margin-bottom: 35px; 
 }
-.artigo h2{
-    font-size: 35px;
-    margin-bottom: 30px;
+
+.artigo h2 {
+  font-size: 35px; 
+  margin-bottom: 30px;
 }
-.artigo div{
-    margin-bottom: 30px;
+.artigo h3 {
+  font-size: 22px; 
+  margin-bottom: 10px;
 }
-.artigo h3{
-    font-size: 22px;
-    margin-bottom: 10px;
+.artigo div {
+  margin-bottom: 10px;
 }
-.artigo div span{
-    font-size: 19px;
+
+.artigo div span {
+  font-size: 19px;
 }
+h1, h2, h3, span{ 
+word-wrap: break-word !important;
+}
+
+.blue-light,   .branco{
+  font-family: 'Rozha One', serif;
+ }
