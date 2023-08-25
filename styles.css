@@ -1,2 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+*{padding: 0;margin: 0;box-sizing: border-box;
+}
+
+.layout{
+    border: 1px solid black;
+    margin: 0 auto;
+    align-self: center;
+    height: 100vh;
+    width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(12, 73px);
+    grid-template-rows:5fr 5fr 1fr;
+    padding: 0 15px;
+    gap: 24px;
+
+    grid-template-areas:
+    "arti arti arti arti img img img img img img img img"
+    "form form form form img img img img img img img img"
+    "r r r r r r r r r r r r"
+    ;
+}
+
+.menutopo{
+    background-color: #01AAE5;
+    width: 100vw;
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+.menutopo nav{
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menutopo nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.artigo{
+    grid-area: arti;
+    background-color: greenyellow;
+}
+.formulario{
+    grid-area: form;
+    background-color:  yellow;
+    
+}
+.imagem{
+    grid-area: img;
+    background-color:  plum;
+}
+footer{
+    grid-area: r;
+}
