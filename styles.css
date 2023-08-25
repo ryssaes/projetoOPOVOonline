@@ -56,3 +56,84 @@ word-wrap: break-word !important;
 .blue-light,   .branco{
   font-family: 'Rozha One', serif;
  }
+ /*Formulario*/
+.container {
+    grid-area: form;
+    background-color: var(--fundo-tres);
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  form .header h2{
+    font-size: 26px;
+    margin: 20px 0;
+  }
+  
+  form {
+    border: 1px solid var(--azul-texto);
+    color: var(--azul-texto);
+    border: 1px solid var(--azul-texto);  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    row-gap: 10px;
+  }
+  
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .form-control label {
+    font-size: 22px;
+  }
+  
+  .form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .button-textup {
+    font-size: 22px;
+  }
+  
+  .upload-button {
+    background-color: var(--azul-botao);
+    color: var(--branco);
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: none;
+    margin-top: 12px;
+  }
+  
+  .button-text {
+    font-size: 14px;
+  }
+  
+  .submit-button {
+    background-color: #314163;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-left: auto;
+    width: 165px;
+    height: 40px;
+    font-size: 19px;
+    margin-top: 40px;
+    margin-left: 350px;
+  }
+  
