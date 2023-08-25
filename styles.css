@@ -25,9 +25,6 @@
     "form form form form form form img img img img img img"
     ;
 }
-
-/* Cabeçalho */
-
 .menutopo{
     background-color: #4a85af;
     width: 100vw;
@@ -36,7 +33,7 @@
     justify-content: center;
 }
 
-/* o menu de navegacao e o footer tem as mesmas conf, entao usamos só uma vez*/
+
 .menutopo nav, .content-footer{
     width: 1170px;
     display: flex;
@@ -62,7 +59,7 @@
     color: #fff; 
     font-family: 'Rozha One', serif;
 }
-/* css grid */
+
 .artigo{
      grid-area: arti;
      color: #314163;
