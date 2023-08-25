@@ -1,36 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
-*{padding: 0;margin: 0;box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
 .layout{
-    border: 1px solid black;
     margin: 0 auto;
-    align-self: center;
-    height: 100vh;
+    align-self: center;      
     width: 1170px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(12, 73px);
-    grid-template-rows:5fr 5fr 1fr;
+    grid-template-rows:repeat(5, 1fr);
     padding: 0 15px;
-    gap: 24px;
+    column-gap: 24px;
 
     grid-template-areas:
-    "arti arti arti arti img img img img img img img img"
-    "form form form form img img img img img img img img"
-    "r r r r r r r r r r r r"
+    "arti arti arti arti arti arti img img img img img img"
+    "arti arti arti arti arti arti img img img img img img"
+    "form form form form form form img img img img img img"
+    "form form form form form form img img img img img img"
+    "form form form form form form img img img img img img"
     ;
 }
 
+/* Cabeçalho */
+
 .menutopo{
-    background-color: #01AAE5;
+    background-color: #4a85af;
     width: 100vw;
-    font-family: 'Oswald', sans-serif;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
 }
-.menutopo nav{
+
+/* o menu de navegacao e o footer tem as mesmas conf, entao usamos só uma vez*/
+.menutopo nav, .content-footer{
     width: 1170px;
     display: flex;
     flex-direction: row;
@@ -43,20 +50,47 @@
     gap: 10px;
     padding: 20px;
 }
-
+.logo{
+  font-size: 2rem;
+  margin-left: 15px;    
+}
+.blue-light {
+    color: #a3c6da;
+    font-family: 'Rozha One', serif; 
+  }
+  .white {
+    color: #fff; 
+    font-family: 'Rozha One', serif;
+}
+/* css grid */
 .artigo{
-    grid-area: arti;
-    background-color: greenyellow;
+     grid-area: arti;
+     color: #314163;
 }
-.formulario{
-    grid-area: form;
-    background-color:  yellow;
-    
+.back{
+    display: block;
+    margin: 50px 0;
+    font-size: 20px;
 }
-.imagem{
-    grid-area: img;
-    background-color:  plum;
+.back a{
+    text-decoration: none;
+    color: #314163;
 }
-footer{
-    grid-area: r;
+.artigo h1{
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+.artigo h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.artigo div{
+    margin-bottom: 30px;
+}
+.artigo h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.artigo div span{
+    font-size: 19px;
 }
