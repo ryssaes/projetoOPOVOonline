@@ -14,8 +14,6 @@
   --azul-botao: #4a85af;
 }
 
-
-
 .artigo{
   color: var(--azul-texto);
 }
@@ -56,236 +54,237 @@ word-wrap: break-word !important;
 .blue-light,   .branco{
   font-family: 'Rozha One', serif;
  }
- /*laptop*/
+
+
+/*laptop*/
 @media screen and (min-width: 1025px) {
-    .layout{
-      margin: 0 auto;
-      align-self: center;      
-      width: 1170px;
-      height: auto;
-      display: grid;
-      grid-template-columns: repeat(12, 73px);
-      grid-template-rows:repeat(5, 1fr);
-      padding: 0 15px;
-      column-gap: 24px;
-  
-      grid-template-areas:
-      "arti arti arti arti arti arti img img img img img img"
-      "arti arti arti arti arti arti img img img img img img"
-      "form form form form form form img img img img img img"
-      "form form form form form form img img img img img img"
-      "form form form form form form img img img img img img"
-      ;
-  }
-   
-  .menutopo{
-      background-color: #4a85af;
-      width: 100vw;
-      color: #FFFFFF;
-      display: flex;
-      justify-content: center;
-  }
-  
-  
-  .menutopo nav, .content-footer{
-      width: 1170px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-  }
-  .menutopo nav ul{
-      list-style: none;
-      display: flex;
-      gap: 10px;
-      padding: 20px;
-  }
-  .logo{
-    font-size: 2rem;
-    margin-left: 15px;    
-  }
-  .blue-light {
-      color: #a3c6da;
-      font-family: 'Rozha One', serif; 
-    }
-    .white {
-      color: #fff; 
-      font-family: 'Rozha One', serif;
-  }
-  
-  .artigo{
-       grid-area: arti;
-       color: #314163;
-  }
-  .back{
-      display: block;
-      margin: 50px 0;
-      font-size: 20px;
-  }
-  .back a{
-      text-decoration: none;
-      color: #314163;
-  }
-  .artigo h1{
-      font-size: 50px;
-      margin-bottom: 35px;
-  }
-  .artigo h2{
-      font-size: 35px;
-      margin-bottom: 30px;
-  }
-  .artigo div{
-      margin-bottom: 30px;
-  }
-  .artigo h3{
-      font-size: 22px;
-      margin-bottom: 10px;
-  }
-  .artigo div span{
-      font-size: 19px;
-  }
-  .formulario{
-      grid-area: form;
-      background-color:  rgb(255, 255, 255);
-      
-  }
-  .column{
-      grid-area: img;
-      margin-top: 10px;
-      width: 240px;
-      margin-left: 300px;
-      height: 1620px;
-      position: relative;
-      
-  }
- 
-   .container {
-    grid-area: form;
-    background-color: var(--fundo-tres);
-    width: 100%;
-    padding: 15px;
+  .layout{
+    margin: 0 auto;
+    align-self: center;      
+    width: 1170px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 73px);
+    grid-template-rows:repeat(5, 1fr);
+    padding: 0 15px;
+    column-gap: 24px;
+
+    grid-template-areas:
+    "arti arti arti arti arti arti img img img img img img"
+    "arti arti arti arti arti arti img img img img img img"
+    "form form form form form form img img img img img img"
+    "form form form form form form img img img img img img"
+    "form form form form form form img img img img img img"
+    ;
+}
+
+.menutopo{
+    background-color: #4a85af;
+    width: 100vw;
+    color: #FFFFFF;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-  }
-  
-  form .header h2{
-    font-size: 26px;
-    margin: 20px 0;
-  }
-  
-  form {
-    border: 1px solid var(--azul-texto);
-    color: var(--azul-texto);
-    border: 1px solid var(--azul-texto);  
+}
+
+.menutopo nav, .content-footer{
+    width: 1170px;
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menutopo nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
     padding: 20px;
-    row-gap: 10px;
+}
+.logo{
+  font-size: 2rem;
+  margin-left: 15px;    
+}
+.blue-light {
+    color: #a3c6da;
+    font-family: 'Rozha One', serif; 
   }
-  
-  .form-control {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+  .white {
+    color: #fff; 
+    font-family: 'Rozha One', serif;
+}
+
+.artigo{
+     grid-area: arti;
+     color: #314163;
+}
+.back{
+    display: block;
+    margin: 50px 0;
+    font-size: 20px;
+}
+.back a{
+    text-decoration: none;
+    color: #314163;
+}
+.artigo h1{
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+.artigo h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.artigo div{
+    margin-bottom: 30px;
+}
+.artigo h3{
     font-size: 22px;
     margin-bottom: 10px;
-  }
-  
-  .form-control label {
-    font-size: 22px;
-  }
-  
-  .form-control input {
-    border: 2px solid #f0f0f0;
-    border-radius: 10px;
-    font-size: 20px;
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .side-by-side{
-    display: flex;
-    gap: 15px;
-  }
-  
-  .button-textup {
-    font-size: 22px;
-  }
-  
-  .upload-button {
-    background-color: var(--azul-botao);
-    color: var(--branco);
-    width: 100%;
-    height: 40px;
-    font-size: 20px;
-    padding: 5px 20px;
-    cursor: pointer;
-    border: none;
-    margin-top: 12px;
-  }
-  
-  .button-text {
-    font-size: 14px;
-  }
-  
-  .submit-button {
-    background-color: var(--azul-texto);
-    color: white;
-    border: none;
-    cursor: pointer;
-    align-self: flex-end;
-    margin-left: auto;
-    width: 165px;
-    height: 40px;
+}
+.artigo div span{
     font-size: 19px;
-    margin-top: 40px;
-    margin-left: 350px;
-  }
-  
-  .column {
+}
+.formulario{
+    grid-area: form;
+    background-color:  rgb(255, 255, 255);
+    
+}
+.column{
     grid-area: img;
-    background-color: var(--azul-texto); 
-    margin-top: 125px;
-    padding: 10px 
-  }
-  
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    left: -100px;
-    width: 390px;
-    height: 390px;
-    z-index: 2; 
-  }
-  
-  .image-overlay img {
-    width: 100%; 
-    height: auto; 
-    margin-top: 450px;
-  }
+    margin-top: 10px;
+    width: 240px;
+    margin-left: 300px;
+    height: 1620px;
+    position: relative;
+}
 
-  footer{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-  }
-  .rodape {
-    background-color: #4a85af;
-    padding: 20px 0; 
-  }
-  
-  .Copyright {
-    font-family: 'Oswald', sans-serif;
-    font-size: 10px;
-    color: #FFFFFF;
-    text-align: right; 
-    margin-right: 50px;
-    float: right;
-  }
-  }
+ .container {
+  grid-area: form;
+  background-color: var(--fundo-tres);
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form .header h2{
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+form {
+  border: 1px solid var(--azul-texto);
+  color: var(--azul-texto);
+  border: 1px solid var(--azul-texto);  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  row-gap: 10px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.form-control label {
+  font-size: 22px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+.side-by-side{
+  display: flex;
+  gap: 15px;
+}
+
+.button-textup {
+  font-size: 22px;
+}
+
+.upload-button {
+  background-color: var(--azul-botao);
+  color: var(--branco);
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+  border: none;
+  margin-top: 12px;
+}
+
+.button-text {
+  font-size: 14px;
+}
+
+.submit-button {
+  background-color: var(--azul-texto);
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-left: auto;
+  width: 165px;
+  height: 40px;
+  font-size: 19px;
+  margin-top: 40px;
+  margin-left: 350px;
+}
+
+.column {
+  grid-area: img;
+  background-color: var(--azul-texto); 
+  margin-top: 125px;
+  padding: 10px 
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 390px;
+  height: 390px;
+  z-index: 2; 
+}
+
+.image-overlay img {
+  width: 100%; 
+  height: auto; 
+  margin-top: 450px;
+ 
+}
+
+footer{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+}
+.rodape {
+  background-color: #4a85af;
+  padding: 20px 0; 
+}
+
+.Copyright {
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+  text-align: right; 
+  margin-right: 50px;
+  float: right;
+}
+}
 
 /*mobile*/
 @media screen and (max-width: 767px) {
@@ -349,6 +348,7 @@ word-wrap: break-word !important;
     img{
       width: 80vw;
     }
+  
   
   .container {
     grid-area: form;
@@ -429,7 +429,7 @@ word-wrap: break-word !important;
     margin-top: 40px;
     margin-left: 350px;
   }
-
+  
   footer{
     display: flex;
     flex-direction:column;
@@ -438,14 +438,12 @@ word-wrap: break-word !important;
     background-color: var(--azul);
     padding: 20px 0; 
   }
-
   .content-footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .Copyright {
     font-family: 'Oswald', sans-serif;
     font-size: 10px;
