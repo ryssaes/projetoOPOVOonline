@@ -3,7 +3,9 @@
 Este é um projeto de formulário responsivo, desenvolvido para um teste para vaga OPOVO.
 
 
-![image](https://github.com/ryssaes/ProjetoOPOVOonline/assets/132323833/baba0abe-aa56-4366-8379-4689f5565ab1)
+<p align="center">
+<img src="https://github.com/ryssaes/ProjetoOPOVOonline/assets/132323833/04246977-de39-4df2-b775-af90fdf7f292" alt="Imagem do Projeto">
+</p>
 
 ## Créditos 💡
 
