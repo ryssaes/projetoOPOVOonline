@@ -2,6 +2,10 @@
 
 Este é um projeto de formulário responsivo, desenvolvido para um teste para vaga OPOVO.
 
+<p text-align:"center">
+![image](https://github.com/ryssaes/ProjetoOPOVOonline/assets/132323833/baba0abe-aa56-4366-8379-4689f5565ab1)
+</p>
+
 ## Créditos 💡
 
 Este projeto foi enviado pelo grupo de comunicação Opovo.
